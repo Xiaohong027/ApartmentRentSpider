@@ -1,0 +1,66 @@
+{% extends 'template.html' %}
+{% block content %}
+
+    <div class="ui inverted vertical masthead center aligned segment header" style="width: 100%;height: 18%" >
+    <div class="ui statistic">
+        <div class="value" style="color: #c71f7e">{{ counts }}</div>
+        <label class="label" style="color: #bcbdbd">条数据</label>
+    </div>
+</div>
+
+    {% for i in house_info %}
+    <div class="ui container segment item yellow" style="width:70%">
+        <table class="ui table">
+            <tr>
+                <th class="six wide">标题</th>
+                <th class="ten wide">{{ i.title }}</th>
+            </tr>
+            <tr>
+                <th>基本信息</th>
+                <th>{{ i.info }}</th>
+            </tr>
+            <tr>
+                <th>位置</th>
+                <th>{{ i.region }}</th>
+            </tr>
+            <tr>
+                <th>数据来源</th>
+                <th>{{ i.source }}</th>
+            </tr>
+            <tr>
+                <th>每月价格</th>
+                <th>{{ i.price }}</th>
+            </tr>
+            <tr>
+                <th>房屋朝向</th>
+                <th>{{ i.direction }}</th>
+            </tr>
+            <tr>
+                <th>联系电话</th>
+                <th>{{ i.phone }}</th>
+            </tr>
+            <tr>
+                <th>详情</th>
+                <th>{{ i.content }}</th>
+            </tr>
+            <tr>
+                <th>链接</th>
+                <th>{{ i.url }}</th>
+            </tr>
+        </table>
+    </div>
+    {% endfor %}
+
+    <div class="ui container segment red" style="width:18%">
+        {% if house_info.has_previous %}
+            <a class="ui actions center" href="?page={{ house_info.previous_page_number }}"> <<< </a>
+        {% endif %}
+            <span class="center">当前第{{ house_info.number }}页</span>
+            <span class="center">共有{{ house_info.paginator.num_pages }}页</span>
+        {% if house_info.has_next %}
+            <a class="ui actions center" href="?page={{ house_info.next_page_number }}"> >>> </a>
+        {% endif %}
+    </div>
+    <div class="footer">
+    </div>
+{% endblock %}
