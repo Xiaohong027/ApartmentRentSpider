@@ -3,7 +3,7 @@ Source of my undergraduate graduation project: Scrapy+Django+MongoDB
 
 
 ## Summary
-+ **arSpider** is the spider based on **scrapy**, which gathers rental dataes of one city from *58.com* and other related platforms. The resulting data is stored in NoSql DB ***MongoDB*
++ **arSpider** is the spider based on **scrapy**, which gathers rental dataes of one city from *58.com* and other related platforms. The resulting data is stored in NoSql DB **MongoDB**
 + **dataDisplay** is the A data display part based on **Django**, which shows dataes in MongoDB.
   - Front-end component library in project: **Semantic UI** https://semantic-ui.com/
   - Data visualization (rental address shown on the map)： **AMAP API** https://lbs.amap.com/
