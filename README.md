@@ -13,6 +13,6 @@ Source of my undergraduate graduation project: Scrapy+Django+MongoDB
 
 
 ## Why open source now?
-  My undergraduate graduation project was leaked and sold on the Internet due to the lack of strict protection of the school-TYUT, including papers, source code, etc. (very complete). So I open source the code to CONDEMN the violation of my rights and interests.
+  My undergraduate graduation project was leaked and sold on the Internet due to the lack of strict protection of the school-T*UT, including papers, source code, etc. (very complete). So I open source the code to CONDEMN the violation of my rights and interests.
 
   I decided not to show the selling links publicly to reduce the wider delivery, but there are my projects on the following sites. I have reported this to my school, but I have no feedback. I complained on the website but it was invalid.
